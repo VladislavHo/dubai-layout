@@ -1,0 +1,65 @@
+.video {
+  padding: 133px 0 20px;
+  margin-bottom: 100px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: $small){
+    padding: 50px 0 20px;
+  }
+  h3 {
+    font-family: "Evolventa";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 68px;
+    /* identical to box height, or 142% */
+
+    text-align: center;
+
+    color: #313131;
+  }
+  p {
+    // max-width: 680px;
+    // padding: 0 260px 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 685px;
+    font-family: "Evolventa";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    text-align: center;
+    color: #313131;
+  }
+  img {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // left: calc(100% - 1512px / 2);
+    z-index: 0;
+  }
+  .l-video{
+    padding: 20px 0 100px;
+    .video__content{
+      max-width: 100%;
+      position: relative;
+      outline: 10px solid white;
+      // z-index: 999;
+      height: 437px;
+      // height: 100%;
+      margin: 0 auto;
+      background-image: url('./assets/img/video.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+}

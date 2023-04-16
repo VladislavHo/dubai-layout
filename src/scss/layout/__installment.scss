@@ -1,0 +1,82 @@
+.installment {
+  width: 100%;
+
+  background-image: url(./assets/img/installment.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .l-installment {
+    max-width: $xlarge;
+    margin: 0 auto;
+    padding: 160px 20px;
+    @media screen and (max-width: $large) {
+      max-width: $large;
+    }
+    .installment-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // height: 180px;
+      @media screen and (max-width: $large) {
+        flex-direction: column;
+      }
+      .title {
+        width: 50%;
+        @media screen and (max-width: $large){
+          width: 75%;
+        }
+        h3 {
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 64px;
+
+          display: flex;
+          align-items: center;
+
+          color: #ffffff;
+        }
+      }
+      .info {
+        width: 50%;
+        height: 100%;
+        padding: 0 50px;
+        @media screen and (max-width: $large) {
+          padding: 0;
+          width: 75%;
+        }
+        ul {
+          // width: 100%;
+          height: 100%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          // align-items: center;
+          li {
+            max-width: 400px;
+            padding-top: 64px;
+            display: flex;
+            justify-content: space-between;
+
+            display: flex;
+            align-items: center;
+            span {
+              width: 264px;
+              display: block;
+              font-family: "Evolventa";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 36px;
+
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

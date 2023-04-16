@@ -1,0 +1,41 @@
+.cloud__container{
+  max-width: 100%;
+  position: absolute;
+  bottom: -50%;
+  display: flex;
+  justify-content: space-around;
+  @media screen and (max-width: $large){
+      bottom: -30%;
+  }
+  img{
+    // width: 33%;
+
+  }
+}
+
+.property__block-cloud{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: -35%;
+  @media screen and (max-width: $large){
+    top: -15%;
+  }
+}
+
+.telegram__cloud{
+      max-width: 100%;
+      position: absolute;
+      bottom: -25%;
+      @media screen and (max-width: $medium){
+        bottom: -20%;
+      }
+      @media screen and (max-width: $small){
+        bottom: -12%;
+      }
+
+      img{
+        width: 100%;
+      }
+}

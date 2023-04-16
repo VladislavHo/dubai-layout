@@ -1,0 +1,157 @@
+.survey__window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+  // @media screen and (max-width: $large) {
+  //   height: 65vh;
+  // }
+  // @media screen and (max-width: $small) {
+  //   height: 50vh;
+  // }
+  img.big__title-img_white {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // z-index: -1;
+  }
+  &-bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    background-image: url("./assets/img/survey/nathan-van-egmond-0IwypLLbHiA-unsplash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__blur {
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(20px);
+      position: absolute;
+
+      display: flex;
+      justify-content: flex-end;
+      &-image {
+        width: 50%;
+        height: 100%;
+        background-image: url("./assets/img/survey/nathan-va.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: $large) {
+          width: 0;
+        }
+      }
+    }
+  }
+  .survey {
+    max-width: $xlarge;
+    // height: 100%;
+    margin: 0 auto;
+    // border: 1px solid red;
+    position: relative;
+    // z-index: 9999;
+    &__content {
+      width: 50%;
+      @media screen and (max-width: $large) {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .close-survey__window-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &-block {
+        padding: 85px 128px 180px 0;
+        height: 100%;
+        @media screen and (max-width: $large) {
+          padding-bottom: 0;
+          padding-right: 0;
+        }
+        h3 {
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 50px;
+
+          color: #313131;
+        }
+        p {
+          padding: 35px 0;
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+          /* or 167% */
+
+          color: #313131;
+        }
+        &__card {
+          max-width: 362px;
+          height: 149px;
+          margin-bottom: 30px;
+          background: rgba(255, 255, 255, 0.3);
+          border: 3px solid rgba(255, 255, 255, 0.6);
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          &-icon {
+            width: 100%;
+            height: 100%;
+
+            position: relative;
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              #ffffff 59.38%,
+              rgba(255, 255, 255, 0) 100%
+            );
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        div {
+          // max-width: 100%;
+          @media screen and (max-width: $small) {
+            max-width: 100%;
+          }
+          .survey__content-block__take-survey-btn {
+            padding: 22px 140px;
+            @include buttonTan();
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: $small) {
+              width: 100%;
+              padding: 22px 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            span {
+              padding-right: 15px;
+              font-family: "Evolventa";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 24px;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

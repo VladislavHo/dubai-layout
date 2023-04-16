@@ -1,0 +1,124 @@
+.advantages__block {
+  width: 100%;
+  .l-advantages__block {
+    max-width: $xlarge;
+    margin: 0 auto;
+    padding: 0 20px;
+    h3 {
+      font-family: "Evolventa";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 64px;
+      /* or 133% */
+
+      color: #313131;
+    }
+    .advantages__block-container {
+      display: flex;
+
+
+
+      margin: 70px 0 80px;
+      @media screen and (max-width: $large){
+        flex-direction: column;
+        align-items: center;
+      }
+      .advantages__block-bg {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        @media screen and (max-width: $large){
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+        img{
+          width: 100%;
+          max-height: 450px;
+          @media screen and (max-width: $large){
+            width: 90%;
+            margin: 0 auto;
+          }
+
+        }
+        .advantages__block-hand_container{
+          max-width: 50%;
+          position: absolute;
+          bottom: 0;
+
+          // bottom: 0;
+          .advantages__block-hand{
+            position: relative;
+            left: 50%;
+            bottom: 0;
+            @media screen and (max-width: $large){
+              bottom: -6px;
+            }
+          }
+        }
+
+      }
+      .advantages__block-info {
+        width: 50%;
+        padding: 0 0 0 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: relative;
+        z-index: 222;
+        @media screen and (max-width: $large){
+          width: 100%;
+          padding: 20px 0 0 20px;
+        }
+        ul {
+          li {
+            padding-bottom: 36px;
+            font-family: "Evolventa";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+
+            color: #313131;
+            h4 {
+              padding-bottom: 10px;
+              font-family: "Evolventa";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 30px;
+              /* identical to box height, or 150% */
+
+              display: flex;
+              align-items: center;
+              span {
+                color: #e9c88f;
+              }
+            }
+          }
+        }
+      }
+    }
+    .advantages__block-container__reverse {
+      // display: flex;
+      flex-direction: row-reverse;
+      @media screen and (max-width: $large){
+        flex-direction: column;
+        align-items: center;
+      }
+      .advantages__block-info{
+
+        padding: 0 90px 0 0;
+
+        @media screen and (max-width: $large){
+            width: 100%;
+            padding: 20px 0 0 20px;
+
+        }
+      }
+    }
+  }
+}

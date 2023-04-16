@@ -1,0 +1,128 @@
+.form {
+  width: 100%;
+  background-image: url(./assets/img/form__block/bg__form.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__blur{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(100px);
+    .l-form {
+      max-width: $xlarge;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: $medium){
+
+      }
+      .form__info {
+        padding: 80px 80px 95px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (max-width: $medium){
+          padding: 80px 0 ;
+        }
+        @media screen and (max-width: $small){
+          justify-content: center;
+          padding: 80px 30px ;
+        }
+        h3 {
+          max-width: 560px;
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 64px;
+          /* or 133% */
+  
+          color: #313131;
+        }
+        p {
+          margin-top: 15px;
+          max-width: 460px;
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          /* or 162% */
+  
+          color: #313131;
+        }
+        form {
+          margin-top: 30px;
+          max-width: 460px;
+          height: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+  
+          input {
+            width: 100%;
+            padding: 21px 0 21px 26px;
+            border: 1px solid rgba(49, 49, 49, 0.2);
+            border-radius: 5px;
+            display: block;
+            font-family: "Evolventa";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            /* identical to box height */
+  
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+  
+            color: #313131;
+          }
+        }
+        button {
+          margin-top: 30px;
+          @include buttonTan();
+          padding: 23px 0;
+  
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+      .form__bg {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 2px solid white;
+        border-top: none;
+        border-bottom: none;
+        @media screen and (max-width: $medium){
+          border: none;
+          align-items: flex-end;
+
+        }
+        @media screen and (max-width: $small){
+          display: none;
+        }
+        img {
+          max-width: 100%;
+          // height: 100%;
+          padding-left: 20px;
+          @media screen and (max-width: $medium){
+            padding: 0;
+          }
+
+
+        }
+      }
+    }
+  }
+
+}

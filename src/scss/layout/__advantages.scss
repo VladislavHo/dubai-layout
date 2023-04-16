@@ -1,0 +1,99 @@
+.advantages {
+  width: 100%;
+
+  .l-advantages {
+    max-width: $xlarge;
+    margin: 0 auto;
+    padding: 110px 0 110px;
+    h3 {
+      font-family: "Evolventa";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 64px;
+      text-align: center;
+    }
+    .advantages__cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: $large) {
+        // display: block;
+        flex-direction: column;
+
+      }
+      .card {
+        width: 30%;
+        border: 2px solid #f7f3ef;
+        border-radius: 5px;
+        padding: 40px 5px 70px;
+        @media screen and (max-width: $large) {
+            width: 100%;
+
+        }
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 0 35px 0;
+          .circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #f7f3ef;
+            display: flex;
+            // align-items: flex-end;
+            justify-content: center;
+
+            position: relative;
+            img {
+              position: absolute;
+              bottom: -40px;
+            }
+          }
+        }
+
+        h5 {
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 34px;
+          /* or 142% */
+
+          text-align: center;
+
+          /* 1 */
+
+          background: linear-gradient(90deg, #e9c88f 0%, #e9af8f 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          // text-fill-color: transparent;
+          @media screen and (max-width: $large){
+            max-width: 550px;
+            margin: 0 auto;
+          }
+        }
+        p.suptitle {
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          /* or 150% */
+
+          text-align: center;
+
+          color: #313131;
+          @media screen and (max-width: $large){
+            max-width: 550px;
+            margin: 0 auto;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

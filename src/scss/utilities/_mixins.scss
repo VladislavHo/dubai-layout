@@ -1,0 +1,32 @@
+@mixin buttonTan(){
+  background: linear-gradient(90deg, $color-tan-gold 0%, $color-tan 100%);
+  box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+  font-family: 'Evolventa';
+  color: $white;
+  &:active{
+    box-shadow: none;
+    transform: scale(0.95);
+  }
+  // border-radius: 50%;
+}
+
+@mixin buttonSilver() {
+  background: rgba(255, 255, 255, 0.65);
+  // filter: blur(100px);
+  // transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 5px;
+
+  font-family: "Evolventa";
+  color: $black;
+  &:active{
+    box-shadow: none;
+    transform: scale(0.95);
+  }
+}
+
+@mixin textEvolventa(){
+  font-style: normal;
+  font-family: 'Evolventa';
+}

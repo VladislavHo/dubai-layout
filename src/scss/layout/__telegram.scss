@@ -1,0 +1,91 @@
+.telegram {
+  width: 100%;
+  background-image: url("./assets/img/telegram_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .l-telegram {
+    max-width: $xlarge;
+    margin: 0 auto;
+    padding: 75px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .telegram__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: relative;
+      z-index: 222;
+      @media screen and (max-width: $large) {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      h3 {
+        font-family: "Evolventa";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        /* or 133% */
+
+        color: #ffffff;
+        @media screen and (max-width: $large) {
+          text-align: center;
+        }
+      }
+      p {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        
+        color: #FFFFFF;
+        @media screen and (max-width: $large) {
+          text-align: center;
+          padding-top: 20px;
+        }
+      }
+      &-btn {
+        @media screen and (max-width: $large) {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding-top: 40px;
+        }
+        button {
+          padding: 22px 130px;
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+
+          color: #ffffff;
+          background: linear-gradient(90deg, #6ad2fd 0%, #02a8f8 100%);
+          box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15);
+          border-radius: 5px;
+          @media screen and (max-width: $large){
+            padding: 22px 60px;
+          }
+        }
+      }
+    }
+    .telegram__bg {
+      @media screen and (max-width: $large){
+        display: none;
+      }
+      img{
+
+        max-width: 100%;
+      }
+    }
+
+  }
+}

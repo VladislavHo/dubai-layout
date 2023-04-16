@@ -1,0 +1,111 @@
+.apartments {
+  width: 100%;
+  .l-apartments {
+    max-width: $xlarge;
+    margin: 0 auto;
+    
+    .apartments__low,
+    .apartments__medium,
+    .apartments__high {
+      width: 100%;
+      margin: 125px 0;
+      h3 {
+        padding-bottom: 60px;
+        font-family: "Evolventa";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 46px;
+        /* identical to box height, or 128% */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #313131;
+      }
+      .apartments__low-active, .apartments__medium-active, .apartments__high-active{
+        max-width: $xlarge;
+        height: 550px;
+        position: relative;
+        overflow: hidden;
+        // display: flex;
+        // justify-content: center;
+        @media screen and (max-width: $large){
+          display: flex;
+          justify-content: center;
+        }
+        .apartment__card {
+          // position: absolute;
+          // width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @media screen and (max-width: $large){
+            // flex-direction: column;
+          }
+          &-content {
+            // width: 100%;
+            width: 362px;
+            padding: 6px;
+            background-color: #f7f3ef;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: $large){
+              margin: 0 10px;
+            }
+            @media screen and (max-width: $small){
+              width: 290px;
+            }
+            // margin-right: calc($xlarge / 3 - 362px);
+            img{
+              max-width: 100%;
+            }
+            ul {
+              padding: 25px 35px 40px;
+              li.apartment__card-company {
+                font-family: "Evolventa";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                /* identical to box height, or 186% */
+  
+                color: #313131;
+              }
+              li.apartment__card-title {
+                padding: 10px 0 20px;
+                font-family: "Evolventa";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                /* or 160% */
+  
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+  
+                color: #313131;
+              }
+              li.apartment__card-info {
+                span{
+                  margin-right: 10px;
+                }
+              }
+              li.apartment__card-price {
+                padding-top: 50px;
+                font-family: "Evolventa";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

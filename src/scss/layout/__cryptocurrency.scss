@@ -1,0 +1,123 @@
+.cryptocurrency {
+  width: 100%;
+  background-color: #f7f2ef;
+  .l-cryptocurrency {
+    padding: 100px 20px;
+    max-width: $xlarge;
+    margin: 0 auto;
+
+    display: flex;
+    @media screen and (max-width: $large) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .cryptocurrency__bg{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img{
+        max-width: 100%;
+        // height: 100%;
+      }
+    }
+    .cryptocurrency__info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media screen and (max-width: $large) {
+        width: 80%;
+      }
+      h3 {
+        font-family: "Evolventa";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 68px;
+        /* identical to box height, or 142% */
+
+        color: #313131;
+      }
+      ol.translations {
+        padding: 40px 0 60px;
+        li {
+          list-style: decimal;
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 46px;
+          /* identical to box height, or 230% */
+
+          /* 1 */
+
+          color: #e9c88f;
+
+          p {
+            font-family: 'Evolventa';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            /* or 162% */
+            
+            
+            color: #313131;
+          }
+        }
+      }
+
+      h4 {
+        width: 100%;
+        padding: 23px;
+        font-family: "Evolventa";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        /* or 140% */
+
+        // background: linear-gradient(90deg, #e9c88f 0%, #e9af8f 100%);
+        background: linear-gradient(90deg, #e9c88f 0%, #e9af8f 100%);
+        border-radius: 5px;
+        color: #ffffff;
+      }
+      ul.transfer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 0  0;
+        @media screen and (max-width: $small){
+          flex-direction: column;
+        }
+        li {
+          width: 50%;
+          @media screen and (max-width: $small){
+            width: 100%;
+            margin: 10px 0;
+          }
+          h5 {
+            font-family: "Evolventa";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 46px;
+            color: #e9c88f;
+            /* identical to box height, or 230% */
+          }
+          p {
+            font-family: "Evolventa";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            /* or 162% */
+
+            color: #313131;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.main {
+  width: 100%;
+  padding: 67px 0;
+  margin-bottom: 60px;
+  background-image: url(./assets/img/bg-dubai.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+  &_bg_circle_one {
+    // display: none;
+    width: 65%;
+    height: 0;
+    padding-bottom: 65%;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    background: rgba(255, 255, 255, 0.5);
+    filter: blur(100px);
+    // z-index: 100;
+    // transform: matrix(-1, 0, 0, 1, 0, 0);
+    @media screen and (max-width: $medium) {
+      top: 0;
+      left: 0;
+    }
+  }
+  .l-main {
+    max-width: $xlarge;
+    // height: 80vh;
+    margin: 0 auto;
+    padding: 60px 10px 0;
+
+    position: relative;
+    @media screen and (max-width: $large) {
+      // padding:
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main__info {
+      // height: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 555;
+      p {
+        font-family: "Evolventa";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+
+        color: #313131;
+        // @media screen and (max-width: $small) {
+        //   font-weight: 400;
+        //   font-size: 14px;
+        //   line-height: 19px;
+        // }
+      }
+      h3 {
+        padding-top: 30px;
+        max-width: 715px;
+        font-family: "Evolventa";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        /* or 133% */
+
+        color: #313131;
+        // @media screen and (max-width: $small) {
+        //   font-weight: 400;
+        //   font-size: 24px;
+        //   line-height: 30px;
+        // }
+      }
+      ul {
+        padding-top: 56px;
+        max-width: 430px;
+        display: flex;
+        justify-content: space-between;
+        li {
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+
+          color: #313131;
+          // @media screen and (max-width: $small) {
+          //   font-weight: 400;
+          //   font-size: 14px;
+          //   line-height: 19px;
+          // }
+        }
+      }
+      .main__btn-container {
+        max-width: 100%;
+        padding-top: 56px;
+        height: 215px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .main__selection__project-btn {
+          max-width: 460px;
+          @include buttonTan();
+
+          padding: 23px 0 23px;
+
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height */
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+
+          color: #ffffff;
+        }
+        .main__get__consultation-btn {
+          max-width: 460px;
+          padding: 23px 0 23px;
+          background: rgba(255, 255, 255, 0.3);
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 20px 50px rgba(61, 61, 61, 0.15),
+            inset 0px -3px 1px rgba(0, 0, 0, 0.15);
+          backdrop-filter: blur(10px);
+          /* Note: backdrop-filter has minimal browser support */
+
+          border-radius: 5px;
+
+          font-family: "Evolventa";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height */
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+
+          color: #313131;
+          &:active{
+            box-shadow: none;
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+}
